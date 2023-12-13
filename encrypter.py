@@ -1,5 +1,5 @@
-import os
-import pyaes
+import os #sistema operacional 
+import pyaes #biblioteca de criptografia
 
 ## abrir o arquivo a ser criptografado
 file_name = "teste.txt"
